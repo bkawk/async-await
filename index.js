@@ -15,8 +15,8 @@ function timesTen(number) {
 function getTodoPromise() {
   fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then((response) => response.json())
-      .then((json) => timesTen(json.id))
-      .then((sum) => console.log(`a: ${sum}`))
+      .then((json) => [timesTen(json.id), json.id])
+      .then((sum) => console.log(`a: ${sum[0]} b: ${sum[1]}` ))
       .catch((err) => console.log(err.message));
 }
 
@@ -28,7 +28,7 @@ async function getTodoAsync() {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
     const json = await response.json();
     const sum = await timesTen(json.id);
-    console.log(`b: ${sum}`);
+    console.log(`c: ${sum} d: ${json.id}`);
   } catch (err) {
     console.log(err.message);
   }

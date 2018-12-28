@@ -27,7 +27,8 @@ async function getTodoAsync() {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
     const json = await response.json();
-    console.log(`b: ${timesTen(json.id)}`);
+    const sum = await timesTen(json.id);
+    console.log(`b: ${sum}`);
   } catch (err) {
     console.log(err.message);
   }

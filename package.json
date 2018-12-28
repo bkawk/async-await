@@ -1,0 +1,25 @@
+{
+  "name": "async-await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-google": "^0.11.0",
+    "node-fetch": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkawk/async-await.git"
+  },
+  "author": "@bkawk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bkawk/async-await/issues"
+  },
+  "homepage": "https://github.com/bkawk/async-await#readme"
+}

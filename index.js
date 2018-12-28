@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 /**
  * timesTen
- * @param number
+ * @param {number} number
  * @return {number} the number * 10
  */
 function timesTen(number) {

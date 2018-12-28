@@ -36,3 +36,6 @@ async function getTodoAsync() {
 
 getTodoPromise();
 getTodoAsync();
+
+// https://caniuse.com/#feat=async-functions (no IE or Opera Mini)
+// https://node.green/#async-functions (good from 7.10.10)

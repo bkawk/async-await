@@ -5,15 +5,9 @@ const fetch = require('node-fetch');
  */
 function getTodoPromise() {
   fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        console.log(json);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
+      .then((response) => response.json())
+      .then((json) => console.log(json))
+      .catch((err) => console.log(err.message));
 }
 
 /**
